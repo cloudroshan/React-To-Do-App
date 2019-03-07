@@ -4,7 +4,6 @@ import {  Form, FormGroup, FormControl } from 'react-bootstrap';
 const EntryForm = ({handleSubmit, checkAllTask}) => (
     <Form className="task-form" onSubmit={ e => {
             e.preventDefault();
-            console.log(e.target.elements);
             handleSubmit( e.target.elements[0].value );
             e.target.elements[0].value = '';
         }}>
